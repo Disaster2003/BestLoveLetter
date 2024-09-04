@@ -182,19 +182,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: 925caac47d16e644387fa5621a23ff2e, type: 3}
+    m_FontSize: 75
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\u544A\u767D\u6587\u304C\u5C4A\u3044\u305F\u3089\u3001\u2661\n\u8AB9\u8B17\u4E2D\u50B7\u304C\u5C4A\u3044\u305F\u3089\u3001\u30B4\u30DF\u7BB1"
 --- !u!222 &5487673
 CanvasRenderer:
   m_ObjectHideFlags: 0
