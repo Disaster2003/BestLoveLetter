@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SetRanking : MonoBehaviour
 {
     private Text txtRank;
-    private int[] rank = new int[6]; //作業エリア
+    private int[] rank = new int[6]; // 作業エリア
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,7 @@ public class SetRanking : MonoBehaviour
         if (PlayerPrefs.HasKey("R1"))
         {
             for (int idx = 1; idx <= 5; idx++)
-                rank[idx] = PlayerPrefs.GetInt("R" + idx); //データ領域読み込み
+                rank[idx] = PlayerPrefs.GetInt("R" + idx); // データ領域読み込み
 
             Debug.Log("データ領域を読み込みました。");
         }
@@ -36,8 +36,8 @@ public class SetRanking : MonoBehaviour
         {
             for (int idx = 1; idx <= 5; idx++)
             {
-                rank[idx] = 0; //ゼロで初期化
-                PlayerPrefs.SetInt("R" + idx, rank[idx]); //ゼロを格納する
+                rank[idx] = 0; // ゼロで初期化
+                PlayerPrefs.SetInt("R" + idx, rank[idx]); // ゼロを格納する
             }
             Debug.Log("データ領域を初期化しました。");
         }
