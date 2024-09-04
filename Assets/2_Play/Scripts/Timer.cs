@@ -24,6 +24,7 @@ public class Timer : MonoBehaviour
             SceneManager.LoadSceneAsync(buildIndex + 1);
         }
 
+        // ŽžŠÔŒv‘ª
         timer -= Time.deltaTime;
         GetComponent<Text>().text = timer.ToString("f1") + "s";
     }
