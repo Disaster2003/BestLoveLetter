@@ -48,6 +48,7 @@ public class SetRanking : MonoBehaviour
     /// </summary>
     private void Ranking()
     {
+        Debug.Log(gameObject.name);
         int ELAPSED = PlayerPrefs.GetInt("R6");
         int newRank = 0; // ‚Ü‚¸¡‰ñ‚ÌƒXƒRƒA‚ğ0ˆÊ‚Æ‰¼’è‚·‚é
 

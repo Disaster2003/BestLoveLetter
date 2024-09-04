@@ -19,13 +19,16 @@ public class Timer : MonoBehaviour
     {
         // タイムアップで、シーン遷移
         if (timer <= 0)
-        {
-            int buildIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadSceneAsync(buildIndex + 1);
-        }
+            Destroy(gameObject);
 
         // 時間計測
         timer -= Time.deltaTime;
         GetComponent<Text>().text = timer.ToString("f1") + "s";
+    }
+
+    private void OnDestroy()
+    {
+        int buildIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadSceneAsync(buildIndex + 1);
     }
 }

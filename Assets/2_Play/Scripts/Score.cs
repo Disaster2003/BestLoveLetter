@@ -11,11 +11,17 @@ public class Score : MonoBehaviour
     void Start()
     {
         score = 0;
+        GetComponent<Text>().text = "Score : " + score.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
         GetComponent<Text>().text = "Score : " + score.ToString();
+    }
+
+    private void OnDestroy()
+    {
+        PlayerPrefs.SetInt("R6", score); // ÉXÉRÉAÇäiî[Ç∑ÇÈ
     }
 }

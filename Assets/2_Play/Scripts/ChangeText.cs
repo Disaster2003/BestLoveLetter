@@ -35,7 +35,7 @@ public class ChangeText : MonoBehaviour
         }
 
         // CSV‚Ì’l‚ğİ’è
-        for (int i = 0; i < csvData.Count; i++)
+        for (int i = 1; i < csvData.Count; i++)
         {
             POINT_AND_MESSAGE tmp;
             tmp.point = int.Parse(csvData[i][0]);
