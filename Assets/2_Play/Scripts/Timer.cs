@@ -19,7 +19,9 @@ public class Timer : MonoBehaviour
     {
         // タイムアップで、シーン遷移
         if (timer <= 0)
+        {
             Destroy(gameObject);
+        }
 
         // 時間計測
         timer -= Time.deltaTime;

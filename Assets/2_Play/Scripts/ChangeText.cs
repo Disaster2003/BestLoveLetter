@@ -47,6 +47,13 @@ public class ChangeText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // nullチェック
+        if(fontLetter == null)
+        {
+            Debug.Log("フォントが未設定です");
+            return;
+        }
+
         // 次の文章へ
         if (isChangedText)
         {
@@ -60,9 +67,13 @@ public class ChangeText : MonoBehaviour
 
             // 文のフォントを設定する
             if (tmp < point_and_message.Count / 2)
+            {
                 GetComponent<Text>().font = fontLetter[0];
+            }
             else
+            {
                 GetComponent<Text>().font = fontLetter[1];
+            }
         }
     }
 }
